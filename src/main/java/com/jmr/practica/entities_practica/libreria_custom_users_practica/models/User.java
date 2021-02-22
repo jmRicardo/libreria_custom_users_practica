@@ -1,14 +1,19 @@
 package com.jmr.practica.entities_practica.libreria_custom_users_practica.models;
 
+import lombok.Data;
+
 import javax.persistence.*;
 import java.io.Serial;
 import java.io.Serializable;
 import java.util.List;
 
+@Data
+@Table(name = "users")
+@Entity
 public class User implements Serializable {
 
     @Serial
-    private static final long serialVersionUID = 4_002_221_912_401_133_094L;
+    private static final long serialVersionUID = 5281874871997585497L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
